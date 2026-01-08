@@ -1,27 +1,20 @@
 #include "Chambre.h"
-
+#include <sstream>
 
 // Constructeur
-Chambre::Chambre(int numero, const std::string& type, double prixParNuit)
-    : numero(numero), type(type), prixParNuit(prixParNuit) {
+Chambre::Chambre(int num, const std::string& typeChambre, double prix) {
+    numero = num;
+    type = typeChambre;
+    prixParNuit = prix;
 }
 
 // Getters
-int Chambre::getNumero() const {
-    return numero;
-}
+int Chambre::getNumero() const { return numero; }
+std::string Chambre::getType() const { return type; }
+double Chambre::getPrixParNuit() const { return prixParNuit; }
 
-std::string Chambre::getType() const {
-    return type;
-}
-
-double Chambre::getPrixParNuit() const {
-    return prixParNuit;
-}
-
-// Setter pour modifier le prix
+// Setter
 void Chambre::setPrixParNuit(double nouveauPrix) {
     prixParNuit = nouveauPrix;
 }
-
 

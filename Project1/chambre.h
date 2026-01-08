@@ -5,24 +5,22 @@
 
 class Chambre {
 private:
-    int numero;           // Numéro de la chambre
-    std::string type;     // Type de chambre : Single, Double, Suite...
-    double prixParNuit;   // Prix par nuit en $
+    int numero;
+    std::string type;
+    double prixParNuit;
 
 public:
     // Constructeur
-    Chambre(int numero, const std::string& type, double prixParNuit);
+    Chambre(int num, const std::string& typeChambre, double prix);
 
     // Getters
     int getNumero() const;
     std::string getType() const;
     double getPrixParNuit() const;
 
-    // Setter / Helper
+    // Setter
     void setPrixParNuit(double nouveauPrix);
 
-    
 };
 
 #endif
-
