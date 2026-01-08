@@ -30,3 +30,13 @@ bool Hotel::supprimerChambre(int numero) {
     return false;
 }
 
+
+std::ostream& operator<<(std::ostream& os, const Hotel& h) {
+    os << "Hotel ID: " << h.getId() << ", Nom: " << h.getNom() << ", Ville: " << h.getVille() << std::endl;
+    os << "Liste des chambres:" << std::endl;
+    for (size_t i = 0; i < h.getChambres().size(); ++i) {
+        os << h.getChambres()[i] << std::endl;
+    }
+    return os;
+}
+

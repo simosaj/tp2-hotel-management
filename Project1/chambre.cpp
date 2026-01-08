@@ -1,5 +1,6 @@
 #include "Chambre.h"
 #include <sstream>
+#include <iostream>
 
 // Constructeur
 Chambre::Chambre(int num, const std::string& typeChambre, double prix) {
@@ -17,4 +18,12 @@ double Chambre::getPrixParNuit() const { return prixParNuit; }
 void Chambre::setPrixParNuit(double nouveauPrix) {
     prixParNuit = nouveauPrix;
 }
+
+
+std::ostream& operator<<(std::ostream& os, const Chambre& c) {
+    os << "Chambre " << c.getNumero()
+        << " (" << c.getType() << "), Prix par nuit: $" << c.getPrixParNuit();
+    return os;
+}
+
 

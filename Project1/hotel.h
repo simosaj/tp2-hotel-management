@@ -13,6 +13,8 @@ private:
     std::vector<Chambre> chambres;
 
 public:
+    friend std::ostream& operator<<(std::ostream& os, const Hotel& h);
+
     // Constructeur
     Hotel(const std::string& identifiant, const std::string& nomHotel, const std::string& villeHotel);
 

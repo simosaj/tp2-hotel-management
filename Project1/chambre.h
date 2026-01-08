@@ -10,6 +10,8 @@ private:
     double prixParNuit;
 
 public:
+    friend std::ostream& operator<<(std::ostream& os, const Chambre& c);
+
     // Constructeur
     Chambre(int num, const std::string& typeChambre, double prix);
 
