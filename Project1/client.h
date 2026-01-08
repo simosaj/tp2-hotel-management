@@ -10,6 +10,8 @@ private:
     std::string prenom;
 
 public:
+    friend std::ostream& operator<<(std::ostream& os, const Client& c);
+
     // Constructeur
     Client(const std::string& identifiant, const std::string& nomClient, const std::string& prenomClient);
 
