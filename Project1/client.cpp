@@ -20,5 +20,9 @@ std::ostream& operator<<(std::ostream& os, const Client& c) {
     return os;
 }
 
+std::string Client::getNomComplet() const {
+    return prenom + " " + nom;
+}
+
 
 
