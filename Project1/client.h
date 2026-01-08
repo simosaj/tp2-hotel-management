@@ -10,19 +10,16 @@ private:
     std::string prenom;
 
 public:
-    //les constructeur
-    Client(const std::string& id,
-        const std::string& nom,
-        const std::string& prenom);
+    // Constructeur
+    Client(const std::string& identifiant, const std::string& nomClient, const std::string& prenomClient);
 
-    //les getters
+    // Getters
     std::string getId() const;
     std::string getNom() const;
     std::string getPrenom() const;
 
-    // Méthodes helper
+    // Helper
     std::string getNomComplet() const;
-    bool operator==(const Client& other) const;
 };
 
 #endif
