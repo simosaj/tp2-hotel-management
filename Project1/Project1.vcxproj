@@ -127,16 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Book.cpp" />
+    <ClCompile Include="chambre.cpp" />
+    <ClCompile Include="client.cpp" />
     <ClCompile Include="date.cpp" />
+    <ClCompile Include="hotel.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="reservation.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Book.h" />
+    <ClInclude Include="chambre.h" />
+    <ClInclude Include="client.h" />
     <ClInclude Include="date.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include=".gitignore" />
+    <ClInclude Include="hotel.h" />
+    <ClInclude Include="reservation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -7,14 +7,14 @@
 
 class Hotel {
 private:
-    std::string id;             // Identifiant unique de l'hôtel
-    std::string nom;            // Nom de l'hôtel
-    std::string ville;          // Ville où se trouve l'hôtel
-    std::vector<Chambre> chambres; // Parce que le nombre des chambres est variable
+    std::string id;
+    std::string nom;
+    std::string ville;
+    std::vector<Chambre> chambres;
 
 public:
     // Constructeur
-    Hotel(const std::string& id, const std::string& nom, const std::string& ville);
+    Hotel(const std::string& identifiant, const std::string& nomHotel, const std::string& villeHotel);
 
     // Getters
     std::string getId() const;
@@ -22,10 +22,10 @@ public:
     std::string getVille() const;
     std::vector<Chambre> getChambres() const;
 
-    // Méthodes helper
-    void ajouterChambre(const Chambre& c);     // Ajouter une chambre
-    bool supprimerChambre(int numero);         // Supprimer une chambre par numéro
-
+    // Helper
+    void ajouterChambre(const Chambre& c);
+    bool supprimerChambre(int numero); 
+    
 };
 
 #endif
